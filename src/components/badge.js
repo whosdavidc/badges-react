@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../styles/Badge.css';
+import  './styles/Badge.css';
 import confLogo from '../images/badge-header.svg';
 
 class Badge extends React.Component {
@@ -28,7 +28,7 @@ class Badge extends React.Component {
             <h3>{this.props.jobTitle}</h3>
             <div>{this.props.instagram}</div>
           </div>
-  
+          
           <div className="Badge__footer">#platziconf</div>
         </div>
       );

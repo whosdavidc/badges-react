@@ -4,19 +4,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-import 'bootstrap/dist/css/bootstrap.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './global.css'
-import Badge from './components/badge';    
+import BadgeNew from './pages/BadgeNew.js';    
+
 
 const container = document.getElementById('app');
 
 ReactDOM.render(
-    <Badge 
-        firstName="Dav" 
-        lastName="Castro" 
-        jobTitle='Frontend developer' 
-        instagram='whosdavidc'
-    />, container);
+    <BadgeNew/>, container);
 
 
 
