@@ -16,7 +16,7 @@ class Badge extends React.Component {
           <div className="Badge__section-name">
             <img
               className="Badge__avatar"
-              src="https://www.gravatar.com/avatar/64b910466d3275688c175540ce067d10?d=identicon"
+              src={this.props.avatarUrl}
               alt="Avatar"
             />
             <h1>
@@ -26,7 +26,7 @@ class Badge extends React.Component {
   
           <div className="Badge__section-info">
             <h3>{this.props.jobTitle}</h3>
-            <div>{this.props.instagram}</div>
+            <div>@{this.props.instagram}</div>
           </div>
           
           <div className="Badge__footer">#platziconf</div>
