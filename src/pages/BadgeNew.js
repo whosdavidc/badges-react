@@ -8,6 +8,16 @@ import Navbar from '../components/Navbar.js';
 
 
 class BadgeNew extends React.Component{
+    state = { form: []};
+
+    handleChange = e => {
+        this.setState({
+            form: {
+                [e.target.name]: e.target.value,
+            },
+        });
+    }
+
     render() {
         return(    
             <div>
@@ -25,7 +35,7 @@ class BadgeNew extends React.Component{
                             email = "zcastrodavid@gmail.com" />
                         </div> 
                         <div className="col-6">
-                            <BadgeForm/>
+                            <BadgeForm onChange={this.handleChange}/>
                         </div>
                     </div>                
                 </div>                
