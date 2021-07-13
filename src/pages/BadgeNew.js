@@ -22,7 +22,7 @@ class BadgeNew extends React.Component{
                             <Badge firstName = "David"lastName = "Castro"
                             avatarUrl = "https://www.gravatar.com/avatar/64b910466d3275688c175540ce067d10?d=identicon"
                             jobTitle = "Frontend developer"
-                            instagram = "whosdavidc" />
+                            email = "zcastrodavid@gmail.com" />
                         </div> 
                         <div className="col-6">
                             <BadgeForm/>
