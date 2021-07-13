@@ -8,7 +8,13 @@ import Navbar from '../components/Navbar.js';
 
 
 class BadgeNew extends React.Component{
-    state = { form: []};
+    state = { form: {
+        firstName: '',
+        lastName: '',
+        email: '',
+        jobTitle: '',
+        instagram: '' //With this definition we avoid that the ReacDOM detect the inputs as uncontrolled at the beginning.
+    }}
 
     handleChange = e => {
         this.setState({
@@ -30,13 +36,16 @@ class BadgeNew extends React.Component{
                 <div className="container">
                     <div className="row">
                         <div className="col-6">
-                            <Badge firstName = "David"lastName = "Castro"
+                            <Badge 
+                            firstName = {this.state.form.firstName}
+                            lastName = {this.state.form.lastName}
                             avatarUrl = "https://www.gravatar.com/avatar/64b910466d3275688c175540ce067d10?d=identicon"
-                            jobTitle = "Frontend developer"
-                            email = "zcastrodavid@gmail.com" />
+                            jobTitle = {this.state.form.jobTitle}
+                            email = {this.state.form.email}
+                            instagram = {this.state.form.instagram} />
                         </div> 
                         <div className="col-6">
-                            <BadgeForm onChange={this.handleChange}/>
+                            <BadgeForm onChange={this.handleChange} formValues={this.state.form}/>
                         </div>
                     </div>                
                 </div>                
