@@ -2,7 +2,10 @@ import React from 'react';
 
 class BadgeForm extends React.Component {
     state = {
-
+        firstName: '',
+        lastName: '',
+        email: '',
+        jobTitle: '' //With this definition we avoid that the ReacDOM detect the inputs as uncontrolled at the beginning.
     };
 
     handleChange = (e) => {
