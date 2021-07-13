@@ -1,11 +1,10 @@
 import React from 'react';
 import  './styles/Badge.css';
 import confLogo from '../images/badge-header.svg';
+import BadgeNew from '../pages/BadgeNew.js';
 
 class Badge extends React.Component {
     render() {
-      // const name = 'David';
-      // const lastName = 'Castro';
 
       return (
         <div className="Badge">
@@ -35,5 +34,4 @@ class Badge extends React.Component {
     }
 }
 
-
-    export default Badge;
+export default Badge;
