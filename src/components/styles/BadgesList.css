@@ -1,0 +1,9 @@
+.card{
+    margin-bottom: 3%;
+    box-shadow: 0px 10px 10px -6px black;
+}
+
+.photo{
+    margin: 1rem;
+    border-radius: 120rem;
+}
