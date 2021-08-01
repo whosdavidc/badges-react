@@ -1,4 +1,5 @@
 import React from 'react';
+import logoTwitter from './../images/twitterLogo.png';
 import './styles/BadgesList.css';
 
 class BadgesList extends React.Component{
@@ -12,9 +13,18 @@ class BadgesList extends React.Component{
                                 <div>
                                     <img src={badge.avatarUrl} className="photo"/>
                                 </div>
-                                <p>
-                                    {badge.firstName} {badge.lastName}
-                                </p>
+                                <div>
+                                    <p className='name'>
+                                        {badge.firstName} {badge.lastName}<br/>
+                                    </p>
+                                    <p className='jobTitle'>
+                                        {badge.jobTitle}
+                                    </p>
+                                    <p className='twitter'>
+                                        <img src={logoTwitter} className='logoTwitter'/> {badge.twitter}
+                                    </p>
+                                    
+                                </div>
                             </li>
                     )
                 })}

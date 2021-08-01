@@ -18,7 +18,7 @@ class Badge extends React.Component {
               alt="Avatar"
             />
             <h1>
-              {this.props.firstName} <br /> {this.props.lastName}
+              {this.props.firstName} <br /> {this.props.lastName} 
             </h1>
           </div>
   

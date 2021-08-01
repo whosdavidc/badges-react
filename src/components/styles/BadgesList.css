@@ -1,9 +1,33 @@
 .card{
+    display: flex;
+    flex-direction: row;
     margin-bottom: 3%;
     box-shadow: 0px 10px 10px -6px black;
+
 }
+
+.name{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.jobTitle{
+    font-style: italic;    
+}
+
 
 .photo{
     margin: 1rem;
     border-radius: 120rem;
+}
+
+/* .twitter{
+    display: none;
+} */
+
+
+.logoTwitter{
+    height: 2.3rem;
 }
